@@ -45,7 +45,7 @@ function profileviewers_activate()
 pid INT NOT NULL,
 uid INT NOT NULL);");
 
-	$db->query("CREATE TABLE IF NOT EXISTS mybb_profileviewers_views (
+	$db->query("CREATE TABLE IF NOT EXISTS ".TABLE_PREFIX."profileviewers_views (
 uid INT NOT NULL,
 views INT NOT NULL);");
 	require MYBB_ROOT."/inc/adminfunctions_templates.php";
